@@ -24,32 +24,41 @@
 .resume-button {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    padding: 17px 30px;
+    gap: 25px;
     margin-top: 25px;
+    padding: 16px 24px;
 
-    background: #c8ff45;
-    color: #09090d;
+    background: var(--lime);
+    color: var(--bg);
 
-    border: 1px solid #c8ff45;
-    border-radius: 50px;
+    border: 1px solid var(--lime);
+    border-radius: 3px;
 
-    text-decoration: none;
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
 
-    box-shadow: 0 0 20px rgba(200, 255, 69, 0.18);
-
+    box-shadow: 0 0 25px rgba(214, 255, 112, 0.15);
     transition: all 0.3s ease;
+}
+
+.resume-button span {
+    font-size: 18px;
 }
 
 .resume-button:hover {
     background: transparent;
-    color: #c8ff45;
+    color: var(--lime);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(214, 255, 112, 0.15);
+}
+
+@media (max-width: 800px) {
+    .hero-bottom {
+        align-items: flex-start;
+    }
+}
     box-shadow: 0 0 30px rgba(200, 255, 69, 0.35);
     transform: translateY(-5px);
 }
